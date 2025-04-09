@@ -1,6 +1,5 @@
-int ceiling (float number)
+int ceiling(float number)
 {
-	int result = number + 1;
-
-	return result;
+    int integer_part = number;
+    return (number > integer_part) ? integer_part + 1 : integer_part;
 }
